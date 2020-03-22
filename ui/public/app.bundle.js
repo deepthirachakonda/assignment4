@@ -254,8 +254,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
- //  const Initialproducts = [
-//  ];
+
 
 var ProductRow = /*#__PURE__*/function (_Component) {
   _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7___default()(ProductRow, _Component);

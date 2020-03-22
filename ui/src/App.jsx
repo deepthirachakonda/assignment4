@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import '../public/css/app.css';
 import ReactDOM from 'react-dom';
 
-//  const Initialproducts = [
-//  ];
 
 class ProductRow extends Component {
     render() {
