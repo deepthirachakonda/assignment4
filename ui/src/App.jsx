@@ -137,18 +137,6 @@ export default class ProductList extends Component {
         Image
       }
   }`;
-  // const response = await fetch('window.ENV.UI_API_ENDPOINT', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/json' },
-  //     body: JSON.stringify({ query })
-  //   });
-  //   const result = await response.json();
-  //   //const result = JSON.parse(body);
-  //   console.log(result);
-  //   this.setState({ products: result.data.ProductList });
-  // // setTimeout(()=>{
-  // //  this.setState({products:Initialproducts});
-  // //  },500);
       const data = await graphQLFetch(query);
       console.log(data);
       if (data) {
@@ -166,14 +154,6 @@ export default class ProductList extends Component {
         Image
       }
     }`;
-    // const response = await fetch('window.ENV.UI_API_ENDPOINT', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ query, variables:{product}})
-    // });
-    // const result = await response.json();
-    // console.log(result);
-    // this.loadData();
     const data = await graphQLFetch(query, { product });
     if (data) {
     this.loadData();

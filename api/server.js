@@ -12,8 +12,6 @@ const port = process.env.API_SERVER_PORT || 3000;
 
 let aboutMessage = "My Company Inventory";
 
-// const productDB = [
-// ];
 
 function setAboutMessage(_, { message }) {
     aboutMessage = message;
@@ -25,18 +23,6 @@ async function ProductList() {
     const products = await db.collection('products').find({}).toArray();
     return products;
 }
-
-// async function getNextSequence(name) {
-//     //const result = await db.collection('products');
-//     const temp = await db.collection('products').find({}).toArray();
-//     //return result.count();
-//         // { Product_id: name },
-//     // { $inc: { current: 1 } },
-//     // { returnOriginal: false },
-//     // );
-//     console.log(temp.length);
-//     return temp.length+1;
-//     }
 
     function issueValidate(product) {
         const errors = [];
@@ -92,12 +78,7 @@ const app = express();
 const enableCors = (process.env.ENABLE_CORS || 'true') === 'true';
 console.log('CORS setting:', enableCors);
 server.applyMiddleware({ app, path: '/graphql', cors: enableCors });
-// const port = process.env.API_SERVER_PORT || 3000;
-//app.use(express.static('dist'));
-// app.get('/api/getUsername', (req, res) => res.send({ username: fs.userInfo().username }));
-// server.applyMiddleware({ app, path: '/graphql' , cors: enableCors });
-// app.listen(3000, function () {
-//     console.log('Api server started on port 3000');
+
 (async function start() {
     try {
       await connectToDb();

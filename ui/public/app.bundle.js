@@ -495,19 +495,7 @@ var ProductList = /*#__PURE__*/function (_Component4) {
             switch (_context.prev = _context.next) {
               case 0:
                 console.log("test message122");
-                query = "query {\n      ProductList{\n        Product_id\n        Product_name\n        Category\n        Price\n        Image\n      }\n  }"; // const response = await fetch('window.ENV.UI_API_ENDPOINT', {
-                //     method: 'POST',
-                //     headers: { 'Content-Type': 'application/json' },
-                //     body: JSON.stringify({ query })
-                //   });
-                //   const result = await response.json();
-                //   //const result = JSON.parse(body);
-                //   console.log(result);
-                //   this.setState({ products: result.data.ProductList });
-                // // setTimeout(()=>{
-                // //  this.setState({products:Initialproducts});
-                // //  },500);
-
+                query = "query {\n      ProductList{\n        Product_id\n        Product_name\n        Category\n        Price\n        Image\n      }\n  }";
                 _context.next = 4;
                 return graphQLFetch(query);
 
@@ -545,15 +533,7 @@ var ProductList = /*#__PURE__*/function (_Component4) {
             switch (_context2.prev = _context2.next) {
               case 0:
                 console.log("test message");
-                query = "mutation ProductAdd($product: ProductInputs!){\n      ProductAdd(product: $product)  {\n        Product_id\n        Product_name\n        Category\n        Price\n        Image\n      }\n    }"; // const response = await fetch('window.ENV.UI_API_ENDPOINT', {
-                //   method: 'POST',
-                //   headers: { 'Content-Type': 'application/json' },
-                //   body: JSON.stringify({ query, variables:{product}})
-                // });
-                // const result = await response.json();
-                // console.log(result);
-                // this.loadData();
-
+                query = "mutation ProductAdd($product: ProductInputs!){\n      ProductAdd(product: $product)  {\n        Product_id\n        Product_name\n        Category\n        Price\n        Image\n      }\n    }";
                 _context2.next = 4;
                 return graphQLFetch(query, {
                   product: product

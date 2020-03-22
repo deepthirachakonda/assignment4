@@ -3,7 +3,6 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: { app: ['babel-polyfill','./src/App.jsx'] },
-  //entry: ['babel-polyfill', './src/App.jsx'],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'public'),
