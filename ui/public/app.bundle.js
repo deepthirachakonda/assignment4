@@ -254,8 +254,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-
-var Initialproducts = [];
+ //  const Initialproducts = [
+//  ];
 
 var ProductRow = /*#__PURE__*/function (_Component) {
   _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_7___default()(ProductRow, _Component);
@@ -339,8 +339,8 @@ var ProductAdd = /*#__PURE__*/function (_Component3) {
         Category: form.Category.value,
         Price: form.Price.valueAsNumber,
         Image: form.Image.value
-      };
-      var temp = product.Image;
+      }; //const temp = product.Image;
+
       this.props.createProduct(product);
       form.Product_name.value = "";
       form.Category.value = "Shirts";

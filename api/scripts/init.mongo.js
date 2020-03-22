@@ -18,9 +18,10 @@ const productDB = [
     db.products.insertMany(productDB);
     const count = db.products.count();
     print('Inserted', count, 'products');
-    db.products.remove({ _id: 'products' });
-    db.products.insert({ _id: 'products', current: count });
+    db.counters.remove({ _id: 'products' });
+    db.counters.insert({ _id: 'products', current: count });
     db.products.createIndex({ id: 1 }, { unique: true });
-    db.products.createIndex({ status: 1 });
-    db.products.createIndex({ owner: 1 });
-    db.products.createIndex({ created: 1 });
+    db.products.createIndex({ Product_name: 1 });
+    db.products.createIndex({ Category: 1 });
+    db.products.createIndex({ Price: 1 });
+    db.products.createIndex({ Image: 1 });
