@@ -25,7 +25,7 @@
         "@babel/runtime": "^7.9.2",
         "babel-polyfill": "^6.26.0",
         "dotenv": "^6.2.0",
-        "express": "^4.16.4",
+        "express": "^4.17.3",
         "http-proxy-middleware": "^0.19.1",
         "nodemon": "^1.18.9",
         "prop-types": "^15.6.2",
